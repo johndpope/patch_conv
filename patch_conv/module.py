@@ -2,7 +2,6 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-
 class PatchConv2d(nn.Module):
     def __init__(self, splits: int = 4, conv2d: nn.Conv2d = None, *args, **kwargs):
         super(PatchConv2d, self).__init__()
